@@ -2,7 +2,6 @@
 
 ## Definition
 The bricked-time timer represents the time a robot is incapable of playing due to a technical issue ("bricked").
-.
 
 ## Values
 This property stores an integer value of milliseconds based on the time a robot is bricked.

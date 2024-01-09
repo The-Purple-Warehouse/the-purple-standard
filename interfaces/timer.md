@@ -1,4 +1,4 @@
-# Timer
+# timer
 
 ## Definition
 A timer represents the duration of time spent on an action that a robot can take during the match.

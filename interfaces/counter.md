@@ -1,4 +1,4 @@
-# Counter
+# counter
 
 ## Definition
 A counter represents a repeated action that a robot can take during the match.

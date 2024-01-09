@@ -1,4 +1,4 @@
-# Rating
+# rating
 
 ## Definition
 An rating represents a subjective evaluation of actions that a robot can take during the match.

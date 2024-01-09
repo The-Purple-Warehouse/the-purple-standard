@@ -4,7 +4,7 @@
 The teleop-scoring-2024 data represents a chronologically ordered list of game elements scored in various locations during the teleoperated period of the match.
 
 ## Values
-This property stores an integer value on a 0-4 scale based on the driver's skill.
+This property stores a list of values based on the locations and types of scored game elements.
 - "as" - a note scored in an amp
 - "am" - a note missed in an amp
 - "ss" - a note scored in a non-amplified speaker

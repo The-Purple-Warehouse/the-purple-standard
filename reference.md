@@ -43,6 +43,6 @@
 ### timers
 | name | definition | values |
 |---|---|---|
-| [bricked-time](/properties/timers/bricked-time.md) | The bricked-time timer represents the time a robot is incapable of playing due to a technical issue ("bricked").<br>. | This property stores an integer value of milliseconds based on the time a robot is bricked. |
+| [bricked-time](/properties/timers/bricked-time.md) | The bricked-time timer represents the time a robot is incapable of playing due to a technical issue ("bricked"). | This property stores an integer value of milliseconds based on the time a robot is bricked. |
 | [defense-time](/properties/timers/defense-time.md) | The defense-time timer represents the time a robot spends performing defensive maneuvers during the match. | This property stores an integer value of milliseconds based on the time a robot spends performing defensive maneuvers. |
 | [stage-time-2024](/properties/timers/stage-time-2024.md) | The stage-time timer represents the time a robot spends between entering the Stage Zone to climb and the robot reaching the Onstage position. | This property stores an integer value of milliseconds based on the time a robot spends climbing. |

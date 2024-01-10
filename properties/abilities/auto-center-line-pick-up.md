@@ -1,7 +1,7 @@
-# center-line-pick-up
+# auto-center-line-pick-up
 
 ## Definition
-The center-line-pick-up ability represents whether the robot can pick up game pieces from the center line during the autonomous period of the match.
+The auto-center-line-pick-up ability represents whether the robot can pick up game pieces from the center line during the autonomous period of the match.
 
 ## Values
 This property stores a boolean (true/false) value depending on whether or not the robot can pick up game pieces from the center line during the autonomous period of the match.

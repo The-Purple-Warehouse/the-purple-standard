@@ -1,0 +1,44 @@
+{
+	"metadata": {
+		"event": "2024camb",
+		"match": {
+			"level": "qm",
+			"number": 3,
+			"set": 1,
+		},
+		"bot": "9999",
+		"timestamp": 1711729092182,
+		"scouter": {
+			"name": "kabir",
+			"team": "1072",
+			"app": "tpw"
+		},
+	},
+	"abilities": {
+		"auto-center-line-pick-up": false,
+		"ground-pick-up": true,
+		"leave-starting-zone": true,
+		"spotlight-2024": false,
+		"stage-level-2024": 3
+	},
+	"counters": {
+
+	},
+	"data": {
+		"auto-scoring-2024": ["ss", "sm"],
+		"teleop-scoring-2024": ["ss", "as", "am", "as", "sa", "ts"],
+		"notes": "decent defense and intake always worked smoothly\ncycles were relatively slow though"
+	},
+	"ratings": {
+		"defense-skill": 3,
+		"driver-skill": 3,
+		"intake-consistency": 4,
+		"speed": 2,
+		"stability": 3
+	},
+	"timers": {
+		"brick-time": 1500,
+		"defense-time": 6745,
+		"stage-time-2024": 12815
+	}
+}

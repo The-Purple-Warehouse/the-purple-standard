@@ -1,7 +1,7 @@
 # abilities
 
 ## Definition
-An ability represents a singular action that a robot can take during the match.
+An ability represents a singular action or state that a robot can take or be in during the match.
 
 ## Examples
 - Leave Starting Zone: true

@@ -1,7 +1,7 @@
-# stage-time
+# stage-time-2024
 
 ## Definition
-The stage-time timer represents the time a robot spends between entering the Stage Zone to climb and the robot reaching the Onstage position.
+The stage-time-2024 timer represents the time a robot spends between entering the Stage Zone to climb and the robot reaching the Onstage position.
 
 ## Values
 This property stores an integer value of milliseconds based on the time a robot spends climbing.

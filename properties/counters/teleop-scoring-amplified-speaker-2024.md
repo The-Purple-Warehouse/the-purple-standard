@@ -12,4 +12,4 @@ This property stores an integer value of the number of game elements scored in t
 - 5
 
 ## Design Recommendation
-This property can be implemented as a counter elements, where a user can increment or decrement the counter based on the number of game elements scored in the speaker while amplified during the teleop period.
+This property can be implemented as a counter element, where a user can increment or decrement the counter based on the number of game elements scored in the speaker while amplified during the teleop period.

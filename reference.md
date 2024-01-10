@@ -6,6 +6,7 @@
 	- [abilities](#abilities)
 	- [counters](#counters)
 	- [data](#data)
+	- [metadata](#metadata)
 	- [ratings](#ratings)
 	- [timers](#timers)
 
@@ -15,6 +16,7 @@
 | [abilities](/interfaces/abilities.md) | An ability represents a singular action or state that a robot can take or be in during the match. | <ul><li>Leave Starting Zone: true</li><li>Leave Starting Zone: false</li><li>Ending Position: "none"</li><li>Ending Position: "parked"</li><li>Ending Position: "hanging"</li><li>Auto Status: 0</li><li>Auto Status: 1</li><li>Auto Status: 2</li></ul> |
 | [counters](/interfaces/counters.md) | A counter represents a repeated action that a robot can take during the match. | <ul><li>Game Pieces Scored: 0</li><li>Game Pieces Scored: 1</li><li>Game Pieces Scored: 2</li><li>Game Pieces Scored: 3</li><li>Fouls: 0</li><li>Fouls: 1</li><li>Fouls: 2</li><li>Fouls: 3</li></ul> |
 | [data](/interfaces/data.md) | This is the default interface and can be used for any type of data that does not match any other interface. | <ul><li>Pieces Scored: ["high", "medium", "high", "low", "low", "missed"]</li><li>Notes: "good robot"</li><li>Attachments: {image: "&lt;bytes&gt;"}</li></ul> |
+| [metadata](/interfaces/metadata.md) | This is the metadata interface and can be used for any type of data that does not directly relate to actions performed by a robot during a match. | <ul><li>Event: 2024camb</li><li>Match: {level: "q", number: 1, set: 1}</li><li>Bot: "9999"</li><li>Scouter: {name: "kabir", team: "1072", app: "tpw"}</li><li>Timestamp: 1711728192000</li></ul> |
 | [ratings](/interfaces/ratings.md) | An rating represents a subjective evaluation of actions that a robot can take during the match. | <ul><li>Drive Skill: 0</li><li>Drive Skill: 1</li><li>Drive Skill: 2</li><li>Drive Skill: 3</li><li>Drive Skill: 4</li><li>Intake Consistency: 2</li><li>Intake Consistency: 3</li></ul> |
 | [timers](/interfaces/timers.md) | A timer represents the duration of time spent on an action that a robot can take during the match. | <ul><li>Defense Time: 0ms</li><li>Defense Time: 100ms</li><li>Defense Time: 3000ms</li><li>Brick Time: 5s</li><li>Brick Time: 10s</li></ul> |
 
@@ -47,6 +49,15 @@
 | [auto-scoring-2024](/properties/data/auto-scoring-2024.md) | The auto-scoring-2024 data represents a chronologically ordered list of game elements scored in various locations during the autonomous period of the match. | This property stores a list of values based on the locations of scored game elements.<br><ul><li>"as" - a note scored in an amp</li><li>"am" - a note missed in an amp</li><li>"ss" - a note scored in a non-amplified speaker</li><li>"sm" - a note missed in a speaker</li></ul> |
 | [notes](/properties/data/notes.md) | The notes data represents a block of text with qualitative observations about a robot or team. | This property stores a string of text, and the character "\n" is used to denote a newline. |
 | [teleop-scoring-2024](/properties/data/teleop-scoring-2024.md) | The teleop-scoring-2024 data represents a chronologically ordered list of game elements scored in various locations during the teleoperated period of the match. | This property stores a list of values based on the locations and types of scored game elements.<br><ul><li>"as" - a note scored in an amp</li><li>"am" - a note missed in an amp</li><li>"ss" - a note scored in a non-amplified speaker</li><li>"sa" - a note scored in an amplified speaker</li><li>"sm" - a note missed in a speaker</li><li>"ts" - a note scored in a trap</li><li>"tm" - a note missed in a trap</li></ul> |
+
+### metadata
+| name | definition | values |
+|---|---|---|
+| [bot](/properties/metadata/bot.md) | The bot metadata represents the team number of the bot being scouted. | This property stores a string value value of the team number of the bot being scouted. |
+| [event](/properties/metadata/event.md) | The event metadata represents the TBA-formatted event key for the match being scouted. | This property stores a string value value of the TBA-formatted event key for the match being scouted. |
+| [match](/properties/metadata/match.md) | The match metadata represents the TBA-formatted match number for the match being scouted. | This property stores an object representation of the TBA-formatted match number for the match being scouted.<br><ul><li>level - the TBA-formatted competition level ("q" for qualification matches, "sf" for all elimination matches, "f" for all finals matches)</li><li>number - the TBA-formatted match number</li><li>set - the TBA-formatted set number</li></ul> |
+| [scouter](/properties/metadata/scouter.md) | The scouter metadata represents the user currently scouting the match. | This property stores an object representation of the user currently scouting the match.<br><ul><li>name - the username or name of the person scouting</li><li>team - the team that is affiliated with the scouter</li><li>app - an identifier for the app used to collect the scouting data</li></ul> |
+| [timestamp](/properties/metadata/timestamp.md) | The timestamp metadata represents the client-side timestamp when the scouting data is submitted (if applicable) or otherwise finalized. | This property stores a timestamp when the scouting data is submitted (if applicable) or otherwise finalized using the number of milliseconds since the Unix timestamp. |
 
 ### ratings
 | name | definition | values |

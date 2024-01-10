@@ -14,7 +14,7 @@
 |---|---|---|
 | [ability](/interfaces/ability.md) | An ability represents a singular action that a robot can take during the match. | <ul><li>Leave Starting Zone: true</li><li>Leave Starting Zone: false</li><li>Ending Position: "none"</li><li>Ending Position: "parked"</li><li>Ending Position: "hanging"</li><li>Auto Status: 0</li><li>Auto Status: 1</li><li>Auto Status: 2</li></ul> |
 | [counter](/interfaces/counter.md) | A counter represents a repeated action that a robot can take during the match. | <ul><li>Game Pieces Scored: 0</li><li>Game Pieces Scored: 1</li><li>Game Pieces Scored: 2</li><li>Game Pieces Scored: 3</li><li>Fouls: 0</li><li>Fouls: 1</li><li>Fouls: 2</li><li>Fouls: 3</li></ul> |
-| [data](/interfaces/data.md) | This is the default interface and can be used for any type of data that does not match any other interface. | <ul><li>Pieces Scored: ["high", "medium", "high", "low", "low", "missed"]</li><li>Comments: "good robot"</li><li>Attachments: {image: "&lt;bytes&gt;"}</li></ul> |
+| [data](/interfaces/data.md) | This is the default interface and can be used for any type of data that does not match any other interface. | <ul><li>Pieces Scored: ["high", "medium", "high", "low", "low", "missed"]</li><li>Notes: "good robot"</li><li>Attachments: {image: "&lt;bytes&gt;"}</li></ul> |
 | [rating](/interfaces/rating.md) | An rating represents a subjective evaluation of actions that a robot can take during the match. | <ul><li>Drive Skill: 0</li><li>Drive Skill: 1</li><li>Drive Skill: 2</li><li>Drive Skill: 3</li><li>Drive Skill: 4</li><li>Intake Consistency: 2</li><li>Intake Consistency: 3</li></ul> |
 | [timer](/interfaces/timer.md) | A timer represents the duration of time spent on an action that a robot can take during the match. | <ul><li>Defense Time: 0ms</li><li>Defense Time: 100ms</li><li>Defense Time: 3000ms</li><li>Endgame Time: 5s</li><li>Endgame Time: 10s</li></ul> |
 
@@ -38,6 +38,7 @@
 | name | definition | values |
 |---|---|---|
 | [auto-scoring-2024](/properties/data/auto-scoring-2024.md) | The auto-scoring-2024 data represents a chronologically ordered list of game elements scored in various locations during the autonomous period of the match. | This property stores a list of values based on the locations of scored game elements.<br><ul><li>"as" - a note scored in an amp</li><li>"am" - a note missed in an amp</li><li>"ss" - a note scored in a non-amplified speaker</li><li>"sm" - a note missed in a speaker</li></ul> |
+| [notes](/properties/data/notes.md) | The notes data represents a block of text with qualitative observations about a robot or team. | This property stores a string of text, and the character "\n" is used to denote a newline. |
 | [teleop-scoring-2024](/properties/data/teleop-scoring-2024.md) | The teleop-scoring-2024 data represents a chronologically ordered list of game elements scored in various locations during the teleoperated period of the match. | This property stores a list of values based on the locations and types of scored game elements.<br><ul><li>"as" - a note scored in an amp</li><li>"am" - a note missed in an amp</li><li>"ss" - a note scored in a non-amplified speaker</li><li>"sa" - a note scored in an amplified speaker</li><li>"sm" - a note missed in a speaker</li><li>"ts" - a note scored in a trap</li><li>"tm" - a note missed in a trap</li></ul> |
 
 ### ratings

@@ -33,6 +33,7 @@
 | name | definition | values |
 |---|---|---|
 | [auto-scoring-amp-2024](/properties/counters/auto-scoring-amp-2024.md) | The auto-scoring-amp-2024 counter represents the number of game elements scored in an amp during the autonomous period of the match. | This property stores an integer value of the number of game elements scored in an amp during the autonomous period. |
+| [auto-scoring-speaker-2024](/properties/counters/auto-scoring-speaker-2024.md) | The auto-scoring-speaker-2024 counter represents the number of game elements scored in a speaker during the autonomous period of the match. | This property stores an integer value of the number of game elements scored in a speaker during the autonomous period. |
 
 ### data
 | name | definition | values |

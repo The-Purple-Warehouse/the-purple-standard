@@ -12,11 +12,11 @@
 ## Interfaces
 | name | definition | examples |
 |---|---|---|
-| [ability](/interfaces/ability.md) | An ability represents a singular action that a robot can take during the match. | <ul><li>Leave Starting Zone: true</li><li>Leave Starting Zone: false</li><li>Ending Position: "none"</li><li>Ending Position: "parked"</li><li>Ending Position: "hanging"</li><li>Auto Status: 0</li><li>Auto Status: 1</li><li>Auto Status: 2</li></ul> |
-| [counter](/interfaces/counter.md) | A counter represents a repeated action that a robot can take during the match. | <ul><li>Game Pieces Scored: 0</li><li>Game Pieces Scored: 1</li><li>Game Pieces Scored: 2</li><li>Game Pieces Scored: 3</li><li>Fouls: 0</li><li>Fouls: 1</li><li>Fouls: 2</li><li>Fouls: 3</li></ul> |
+| [abilities](/interfaces/abilities.md) | An ability represents a singular action that a robot can take during the match. | <ul><li>Leave Starting Zone: true</li><li>Leave Starting Zone: false</li><li>Ending Position: "none"</li><li>Ending Position: "parked"</li><li>Ending Position: "hanging"</li><li>Auto Status: 0</li><li>Auto Status: 1</li><li>Auto Status: 2</li></ul> |
+| [counters](/interfaces/counters.md) | A counter represents a repeated action that a robot can take during the match. | <ul><li>Game Pieces Scored: 0</li><li>Game Pieces Scored: 1</li><li>Game Pieces Scored: 2</li><li>Game Pieces Scored: 3</li><li>Fouls: 0</li><li>Fouls: 1</li><li>Fouls: 2</li><li>Fouls: 3</li></ul> |
 | [data](/interfaces/data.md) | This is the default interface and can be used for any type of data that does not match any other interface. | <ul><li>Pieces Scored: ["high", "medium", "high", "low", "low", "missed"]</li><li>Notes: "good robot"</li><li>Attachments: {image: "&lt;bytes&gt;"}</li></ul> |
-| [rating](/interfaces/rating.md) | An rating represents a subjective evaluation of actions that a robot can take during the match. | <ul><li>Drive Skill: 0</li><li>Drive Skill: 1</li><li>Drive Skill: 2</li><li>Drive Skill: 3</li><li>Drive Skill: 4</li><li>Intake Consistency: 2</li><li>Intake Consistency: 3</li></ul> |
-| [timer](/interfaces/timer.md) | A timer represents the duration of time spent on an action that a robot can take during the match. | <ul><li>Defense Time: 0ms</li><li>Defense Time: 100ms</li><li>Defense Time: 3000ms</li><li>Brick Time: 5s</li><li>Brick Time: 10s</li></ul> |
+| [ratings](/interfaces/ratings.md) | An rating represents a subjective evaluation of actions that a robot can take during the match. | <ul><li>Drive Skill: 0</li><li>Drive Skill: 1</li><li>Drive Skill: 2</li><li>Drive Skill: 3</li><li>Drive Skill: 4</li><li>Intake Consistency: 2</li><li>Intake Consistency: 3</li></ul> |
+| [timers](/interfaces/timers.md) | A timer represents the duration of time spent on an action that a robot can take during the match. | <ul><li>Defense Time: 0ms</li><li>Defense Time: 100ms</li><li>Defense Time: 3000ms</li><li>Brick Time: 5s</li><li>Brick Time: 10s</li></ul> |
 
 ## Properties
 

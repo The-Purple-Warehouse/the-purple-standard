@@ -5,5 +5,5 @@ This is the default interface and can be used for any type of data that does not
 
 ## Examples
 - Pieces Scored: ["high", "medium", "high", "low", "low", "missed"]
-- Comments: "good robot"
+- Notes: "good robot"
 - Attachments: {image: "&lt;bytes&gt;"}

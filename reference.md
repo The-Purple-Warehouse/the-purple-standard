@@ -1,5 +1,14 @@
 # Reference
 
+## Table of Contents
+- [Interfaces](#interfaces)
+- [Properties](#properties)
+	- [abilities](#abilities)
+	- [counters](#counters)
+	- [data](#data)
+	- [ratings](#ratings)
+	- [timers](#timers)
+
 ## Interfaces
 | name | definition | examples |
 |---|---|---|

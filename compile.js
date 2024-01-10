@@ -1,7 +1,18 @@
 const fs = require("fs");
+let plural = {
+	ability: "abilities",
+	counter: "counters",
+	data: "data",
+	rating: "ratings",
+	timer: "timers"
+};
+let header = [];
+header.push("# Reference");
+header.push("");
+header.push("## Table of Contents");
+header.push("- [Interfaces](#interfaces)");
+header.push("- [Properties](#properties)");
 let doc = [];
-doc.push("# Reference");
-doc.push("");
 doc.push("## Interfaces");
 let interfaceFiles = fs.readdirSync("./interfaces").filter(file => file.toLowerCase().endsWith(".md"));
 let interfaces = [];
@@ -56,18 +67,12 @@ function tableFormat(text) {
 	return lines.join("<br>").replaceAll("</ul><br><ul>", "").replaceAll("</ul><br>", "</ul>");
 }
 for(let i = 0; i < interfaces.length; i++) {
-	table.push(`| [${tableFormat(interfaces[i].name)}](/interfaces/${interfaces[i].filename}) | ${tableFormat(interfaces[i].definition)} | ${tableFormat(interfaces[i].examples)} |`);
+	header.push(`	- [${plural[interfaces[i].name]}](#${plural[interfaces[i].name]})`);
+	table.push(`| [${interfaces[i].name}](/interfaces/${interfaces[i].filename}) | ${tableFormat(interfaces[i].definition)} | ${tableFormat(interfaces[i].examples)} |`);
 }
 doc.push(table.join("\n"));
 doc.push("");
 doc.push("## Properties");
-let plural = {
-	ability: "abilities",
-	counter: "counters",
-	data: "data",
-	rating: "ratings",
-	timer: "timers"
-};
 for(let i = 0; i < interfaces.length; i++) {
 	doc.push("");
 	doc.push(`### ${plural[interfaces[i].name]}`);
@@ -119,4 +124,5 @@ for(let i = 0; i < interfaces.length; i++) {
 	}
 	doc.push(table.join("\n"));
 }
-fs.writeFileSync("./reference.md", doc.join("\n"));
+header.push("")
+fs.writeFileSync("./reference.md", [...header, ...doc].join("\n"));

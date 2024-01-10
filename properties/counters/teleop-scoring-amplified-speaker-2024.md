@@ -1,7 +1,7 @@
-# teleop-scoring-amped-speaker-2024
+# teleop-scoring-amplified-speaker-2024
 
 ## Definition
-The teleop-scoring-amped-speaker-2024 counter represents the number of game elements scored in the speaker while amplified during the teleop period of the match.
+The teleop-scoring-amplified-speaker-2024 counter represents the number of game elements scored in the speaker while amplified during the teleop period of the match.
 
 ## Values
 This property stores an integer value of the number of game elements scored in the speaker while amplified during the teleop period.

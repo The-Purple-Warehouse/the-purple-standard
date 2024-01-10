@@ -1,11 +1,4 @@
 const fs = require("fs");
-let plural = {
-	ability: "abilities",
-	counter: "counters",
-	data: "data",
-	rating: "ratings",
-	timer: "timers"
-};
 let header = [];
 header.push("# Reference");
 header.push("");
@@ -67,7 +60,7 @@ function tableFormat(text) {
 	return lines.join("<br>").replaceAll("</ul><br><ul>", "").replaceAll("</ul><br>", "</ul>");
 }
 for(let i = 0; i < interfaces.length; i++) {
-	header.push(`	- [${plural[interfaces[i].name]}](#${plural[interfaces[i].name]})`);
+	header.push(`	- [${interfaces[i].name}](#${interfaces[i].name})`);
 	table.push(`| [${interfaces[i].name}](/interfaces/${interfaces[i].filename}) | ${tableFormat(interfaces[i].definition)} | ${tableFormat(interfaces[i].examples)} |`);
 }
 doc.push(table.join("\n"));
@@ -75,11 +68,11 @@ doc.push("");
 doc.push("## Properties");
 for(let i = 0; i < interfaces.length; i++) {
 	doc.push("");
-	doc.push(`### ${plural[interfaces[i].name]}`);
-	let propertyFiles = fs.readdirSync(`./properties/${plural[interfaces[i].name]}`).filter(file => file.toLowerCase().endsWith(".md"));
+	doc.push(`### ${interfaces[i].name}`);
+	let propertyFiles = fs.readdirSync(`./properties/${interfaces[i].name}`).filter(file => file.toLowerCase().endsWith(".md"));
 	let properties = [];
 	for(let j = 0; j < propertyFiles.length; j++) {
-		let file = fs.readFileSync(`./properties/${plural[interfaces[i].name]}/${propertyFiles[j]}`, {encoding: "utf8"});
+		let file = fs.readFileSync(`./properties/${interfaces[i].name}/${propertyFiles[j]}`, {encoding: "utf8"});
 		let lines = file.split("\n");
 		let filename = propertyFiles[j];
 		let name = propertyFiles[j].split(".")[0];
@@ -120,7 +113,7 @@ for(let i = 0; i < interfaces.length; i++) {
 	table.push(`| name | definition | values |`);
 	table.push(`|---|---|---|`);
 	for(let j = 0; j < properties.length; j++) {
-		table.push(`| [${tableFormat(properties[j].name)}](/properties/${plural[interfaces[i].name]}/${properties[j].filename}) | ${tableFormat(properties[j].definition)} | ${tableFormat(properties[j].values)} |`);
+		table.push(`| [${tableFormat(properties[j].name)}](/properties/${interfaces[i].name}/${properties[j].filename}) | ${tableFormat(properties[j].definition)} | ${tableFormat(properties[j].values)} |`);
 	}
 	doc.push(table.join("\n"));
 }

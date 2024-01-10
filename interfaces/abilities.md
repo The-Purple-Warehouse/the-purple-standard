@@ -1,4 +1,4 @@
-# ability
+# abilities
 
 ## Definition
 An ability represents a singular action that a robot can take during the match.

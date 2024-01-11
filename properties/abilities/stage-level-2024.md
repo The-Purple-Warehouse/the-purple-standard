@@ -17,4 +17,4 @@ This property stores an integer (0 - 3) based on the level of stage climb.
 - 0
 
 ## Design Recommendation
-This property can be implemented as a dropdown menu where the user selects the climb level.
+This property can be implemented as a dropdown menu where the user selects the stage climb level.

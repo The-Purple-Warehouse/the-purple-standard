@@ -17,3 +17,4 @@
 - [Interfaces](/interfaces)
 - [Properties](/properties)
 - [Discord Server](https://thepurplewarehouse.com/discord)
+- [The Purple Warehouse Scouting App](https://thepurplewarehouse.com)

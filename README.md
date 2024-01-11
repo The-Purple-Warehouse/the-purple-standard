@@ -11,7 +11,7 @@
 
 # Relevant Links
 - [Press Release](https://thepurplewarehouse.com/tps-press-release.pdf)
-- [Chief Delphi Thread](https://chiefdelphi.com/)
+- [Chief Delphi Thread](https://www.chiefdelphi.com/t/the-purple-standard-a-unified-and-community-driven-standard-for-frc-scouting-data/449394)
 - [Quick Reference](/reference.md)
 - [Examples](/examples)
 - [Interfaces](/interfaces)

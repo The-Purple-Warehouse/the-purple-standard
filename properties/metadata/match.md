@@ -5,14 +5,14 @@ The match metadata represents the TBA-formatted match number for the match being
 
 ## Values
 This property stores an object representation of the TBA-formatted match number for the match being scouted.
-- level - the TBA-formatted competition level ("q" for qualification matches, "sf" for all elimination matches, "f" for all finals matches)
+- level - the TBA-formatted competition level ("qm" for qualification matches, "sf" for all elimination matches, "f" for all finals matches)
 - number - the TBA-formatted match number
 - set - the TBA-formatted set number
 
 ## Examples
-- {level: "q", number: 1, set: 1}
-- {level: "q", number: 2, set: 1}
-- {level: "q", number: 3, set: 1}
+- {level: "qm", number: 1, set: 1}
+- {level: "qm", number: 2, set: 1}
+- {level: "qm", number: 3, set: 1}
 - {level: "sf", number: 1, set: 1}
 - {level: "sf", number: 1, set: 2}
 - {level: "sf", number: 1, set: 3}

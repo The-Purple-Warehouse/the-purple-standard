@@ -5,11 +5,11 @@ The stability rating represents a subjective evaluation of the stability of the 
 
 ## Values
 This property stores an integer value on a 0-4 scale based on the robot's stability.
-- 4: very stable
-- 3: above average
-- 2: average
-- 1: below average
-- 0: very unstable
+- 4: exceptional stablility
+- 3: above average stability
+- 2: average stability
+- 1: below average stability
+- 0: poor stability
 
 ## Examples
 - 4

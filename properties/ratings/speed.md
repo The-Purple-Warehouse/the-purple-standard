@@ -5,11 +5,11 @@ The speed rating represents a subjective evaluation of the speed of the robot du
 
 ## Values
 This property stores an integer value on a 0-4 scale based on the robot's speed.
-- 4: very fast
-- 3: above average
-- 2: average
-- 1: below average
-- 0: very slow
+- 4: very fast speed
+- 3: above average speed
+- 2: average speed
+- 1: below average speed
+- 0: very slow speed
 
 ## Examples
 - 4

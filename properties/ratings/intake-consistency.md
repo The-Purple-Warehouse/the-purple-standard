@@ -5,11 +5,11 @@ The intake-consistency rating represents a subjective evaluation of the robot's 
 
 ## Values
 This property stores an integer value on a 0-4 scale based on the robot's ability to intake game pieces.
-- 4: consistently good intake ability
-- 3: above average
-- 2: average
-- 1: below average
-- 0: poor intake ability
+- 4: exceptional consistency in intake ability
+- 3: above average consistency in intake ability
+- 2: average consistency in intake ability
+- 1: below average consistency in intake ability
+- 0: poor consistency in intake ability
 
 ## Examples
 - 4

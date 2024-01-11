@@ -7,7 +7,7 @@
 <h1 align="center">The Purple Standard</h1>
 <h3 align="center"><a href="https://thepurplestandard.com/">thepurplestandard.com</a></h3>
 
-<p align="center">A unified, community-driven standard for FRC scouting data<br>Pioneered by FRC's largest collaborative scouting app</p>
+<p align="center">A unified, community-driven standard for FRC scouting data<br>Pioneered by <a href="https://thepurplewarehouse.com">FRC's largest collaborative scouting app</a></p>
 
 # Relevant Links
 - [Press Release](https://thepurplewarehouse.com/tps-press-release.pdf)

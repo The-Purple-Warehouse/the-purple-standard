@@ -16,3 +16,4 @@
 - [Examples](/examples)
 - [Interfaces](/interfaces)
 - [Properties](/properties)
+- [Discord Server](https://thepurplewarehouse.com/discord)

@@ -17,9 +17,9 @@
 	"abilities": {
 		"auto-center-line-pick-up": false,
 		"ground-pick-up": true,
-		"leave-starting-zone": true,
-		"spotlight-2024": false,
-		"stage-level-2024": 3
+		"auto-leave-starting-zone": true,
+		"teleop-spotlight-2024": false,
+		"teleop-stage-level-2024": 3
 	},
 	"counters": {
 

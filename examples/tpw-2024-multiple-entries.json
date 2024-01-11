@@ -17,11 +17,11 @@
 					"timestamp": 1704604894,
 				},
 				"abilities": {
-					"leave-starting-zone": true,
+					"auto-leave-starting-zone": true,
 					"ground-pick-up": false,
 					"auto-center-line-pick-up": false,
-					"spotlight-2024": false,
-					"stage-level-2024": 2,
+					"teleop-spotlight-2024": false,
+					"teleop-stage-level-2024": 2,
 				},
 				"counters": {
 
@@ -61,11 +61,11 @@
 					"timestamp": 1704605632,
 				},
 				"abilities": {
-					"leave-starting-zone": true,
+					"auto-leave-starting-zone": true,
 					"ground-pick-up": true,
 					"auto-center-line-pick-up": true,
-					"spotlight-2024": true,
-					"stage-level-2024": 3,
+					"teleop-spotlight-2024": true,
+					"teleop-stage-level-2024": 3,
 				},
 				"counters": {
 
@@ -107,9 +107,9 @@
 				"abilities": {
 					"auto-center-line-pick-up": false,
 					"ground-pick-up": true,
-					"leave-starting-zone": true,
-					"spotlight-2024": false,
-					"stage-level-2024": 3
+					"auto-leave-starting-zone": true,
+					"teleop-spotlight-2024": false,
+					"teleop-stage-level-2024": 3
 				},
 				"counters": {
 

@@ -1,7 +1,7 @@
-# leave-starting-zone
+# auto-leave-starting-zone
 
 ## Definition
-The leave-starting-zone ability represents whether the robot leaves the starting zone during the autonomous period of the match.
+The auto-leave-starting-zone ability represents whether the robot leaves the starting zone during the autonomous period of the match.
 
 ## Values
 This property stores a boolean (true/false) value depending on whether or not the robot leaves the starting zone.

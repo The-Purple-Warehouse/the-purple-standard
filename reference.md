@@ -1,5 +1,5 @@
 # Reference
-
+These are the properties that currently exist in the TPS repository, but they are not a required list of data that needs to be submitted. If you collect data that does not fit within one of the existing properties, please add a property file under [/properties](/properties) by submitting a pull request so that the data can be standardized and interoperable!
 ## Table of Contents
 - [Interfaces](#interfaces)
 - [Properties](#properties)

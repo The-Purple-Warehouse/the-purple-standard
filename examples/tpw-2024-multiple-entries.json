@@ -4,11 +4,11 @@
 				"metadata": {
 					"scouter": {
 						"name": "omkar",
-						"team": 1072,
+						"team": "1072",
 						"app": "tpw",
 					},
 					"event": "2024camb",
-					"bot": 9999,
+					"bot": "9999",
 					"match": {
 						"level": "qm",
 						"number": 1,
@@ -48,11 +48,11 @@
 				"metadata": {
 					"scouter": {
 						"name": "kabir",
-						"team": 1072,
+						"team": "1072",
 						"app": "tpw",
 					},
 					"event": "2024camb",
-					"bot": 9998,
+					"bot": "9998",
 					"match": {
 						"level": "qm",
 						"number": 1,

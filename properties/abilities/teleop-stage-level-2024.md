@@ -12,6 +12,7 @@ This property stores an integer (0 - 4) based on the level of stage climb.
 - 0: none
 
 ## Examples
+- 4
 - 3
 - 2
 - 1

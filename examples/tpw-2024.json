@@ -4,7 +4,7 @@
 		"match": {
 			"level": "qm",
 			"number": 3,
-			"set": 1,
+			"set": 1
 		},
 		"bot": "9999",
 		"timestamp": 1711729092182,
@@ -12,7 +12,7 @@
 			"name": "kabir",
 			"team": "1072",
 			"app": "tpw"
-		},
+		}
 	},
 	"abilities": {
 		"auto-center-line-pick-up": false,

@@ -1,10 +1,10 @@
 # modified-timestamp
 
 ## Definition
-The timestamp at which this data was last modified (as opposed to the the "timestamp" metadata property that records when it was created or processed.)
+The modified-timestamp metadata represents the timestamp at which this data was last modified (as opposed to the `timestamp` metadata property that records when the data was created).
 
 ## Values
-This property stores a timestamp when the scouting data is last modified. It is in Unix time format (the number of milliseconds since midnight, January 1, 1970 UTC.)
+This property stores a timestamp when the scouting data is last modified. The timestamp is in Unix milliseconds time format (the number of milliseconds since midnight UTC on January 1st, 1970)
 
 ## Examples
 - 1711728192000

@@ -11,8 +11,9 @@ For the red alliance, (0,0) is defined to be the **top right** corner of this im
 
 ![red auto starting area 2024](auto-starting-area-red-2024.png)
 
+
 ## Values
-This property stores an object with an "x" and a "y" where x and y are integers between 0 and 100 (inclusive). 
+This property stores an object with the keys "x" and "y" which map to integers between 0 and 100 inclusive.
 
 ## Examples
 - `{"x":50,"y":50}`

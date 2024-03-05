@@ -4,7 +4,7 @@
 The timestamp metadata represents the client-side timestamp when the scouting data is submitted (if applicable) or otherwise finalized.
 
 ## Values
-This property stores a timestamp when the scouting data is submitted (if applicable) or otherwise finalized.  It is in Unix time format (the number of milliseconds since midnight, January 1, 1970 UTC.)
+This property stores a timestamp when the scouting data is submitted (if applicable) or otherwise finalized. The timestamp is in Unix milliseconds time format (the number of milliseconds since midnight UTC on January 1st, 1970)
 
 ## Examples
 - 1711728192000

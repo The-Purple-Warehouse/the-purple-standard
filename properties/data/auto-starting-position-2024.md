@@ -5,11 +5,11 @@ The (x,y) percentage coordinates of the position in which the **center of the ro
 
 For the blue alliance, (0,0) is defined to be the **top left** corner of this image (near the source). (100,100) is defined to be the **bottom right** corner of this image (near the amp).
 
-![blue auto starting area 2024](auto-starting-area-blue-2024.png)
+![blue auto starting area 2024](../../assets/auto-starting-area-blue-2024.png)
 
 For the red alliance, (0,0) is defined to be the **top right** corner of this image (near the source). (100,100) is defined to be the **bottom left** corner of this image (near the amp).
 
-![red auto starting area 2024](auto-starting-area-red-2024.png)
+![red auto starting area 2024](../../assets/auto-starting-area-red-2024.png)
 
 
 ## Values

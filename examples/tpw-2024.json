@@ -21,12 +21,20 @@
 		"teleop-spotlight-2024": false,
 		"teleop-stage-level-2024": 3
 	},
-	"counters": {
-
-	},
+	"counters": {},
 	"data": {
-		"auto-scoring-2024": ["ss", "sm"],
-		"teleop-scoring-2024": ["ss", "as", "am", "as", "sa", "ts"],
+		"auto-scoring-2024": [
+			"ss",
+			"sm"
+		],
+		"teleop-scoring-2024": [
+			"ss",
+			"as",
+			"am",
+			"as",
+			"sa",
+			"ts"
+		],
 		"notes": "decent defense and intake always worked smoothly\ncycles were relatively slow though"
 	},
 	"ratings": {

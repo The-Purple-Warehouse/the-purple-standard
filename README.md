@@ -78,7 +78,45 @@ If the `success` boolean is false, the `body` field will not be included as the 
 
 The app's logout method should include a function to remove the API key from the device's local storage and then redirect to the TPW authentication request URL with the provided request parameters. Additionally, the app should be able to gracefully handle situations where the API key expires before the provided expiration date as users will be able to enable and disable their API keys in the future.
 
+## Use the API Key
+
+To use the API key, all requests to the TPS API must end with `?key=` followed by the API key.
+
 ## POST /entry/add
+
+**Scopes Required:**
+- `tps.entry.add`
+
+The `POST /entry/add` route allows apps to submit entries to the TPS API. The body of the POST request must be formatted in the following way:
+```
+{
+	entry: {
+		abilities?: any,
+		counters?: any,
+		data?: any,
+		metadata?: any,
+		ratings?: any,
+		timers?: any
+	}
+	privacy?: {
+		path: string,
+		private?: boolean,
+		teams?: string[],
+		type?: "scrambled" | "redacted" | "excluded",
+		detail?: any
+	}[]
+}
+```
+
+The entry field must contain a TPS-formatted scouting entry with `metadata.scouter.team` matching the team number associated with the API key and `metadata.scouter.app` matching the hostname of the app used in the authentication request. Additionally, if the API key does not have the `tpw.scouting.impersonate` scope, the `metadata.scouter.name` field must match the scouting username associated with the API key.
+
+The `privacy` field is an optional array of privacy rules that can protect potentially sensitive data such as usernames and comments from being accessed by other teams. The path field should match the path of the data stored in the TPS format, and the rule will apply to all data under that path. The optional private boolean should indicate whether that data should be considered private (default is `true`). The optional `teams` array should include a whitelist of teams that can be allowed to see that private data (default is `[ metadata.scouter.team ]`). The optional `type` field indicates how the data should be protected. The `scrambled` option will return a portion of a deterministic hash of the data, the `redacted` option will return an indicator that the data has been redacted, and the `excluded` option (default) will simply remove that portion of the data when returning it to another team. The `detail` field can be used to elaborate on how to format `scrambled` or `redacted` data. If using `scrambled` option, the `detail` field can contain a number representing the length of the scrambled data (default is 16, maximum is 64). If using the `redacted` option, the `detail` field can contain the redaction notice (default is `[redacted for privacy]`).
+
+By default, the following privacy rules will be present:
+- `{ path: "data.notes", private: true, type: "redacted", detail: "[redacted for privacy]", teams: [ metadata.scouter.team ] }`
+- `{ path: "metadata.scouter.name", private: true, type: "scrambled", detail: 16, teams: [ metadata.scouter.team ] }`
+
+Those rules can be overridden if another rule is explicitly provided that either matches the path or matches a parent of that path.
 
 ## GET /entry/verify/:hash
 

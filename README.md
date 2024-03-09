@@ -118,7 +118,36 @@ By default, the following privacy rules will be present:
 
 Those rules can be overridden if another rule is explicitly provided that either matches the path or matches a parent of that path.
 
+The API response is formatted in the following way:
+```
+{
+	success: boolean,
+	body?: {
+		hash: string
+	}
+}
+```
+
+The hash is a deterministic representation of the TPS entry and is generated using SHA-256 on the stringified JSON entry where each field in the JSON is sorted in alphabetical order. This hash can be used in other API methods to verify the entry's existence in the TPS database and retrieve the entry. Since the hash is deterministic based on the entry, the TPS database will never store two copies of identical data. When the `metadata.timestamp` property is included, it is highly unlikely that a scouting app will naturally send more than one copy of the exact same data at the exact same millisecond under the exact same scouter.
+
 ## GET /entry/verify/:hash
+
+**Scopes Required:**
+None (no API key is needed for this request)
+
+The `GET /entry/verify/:hash` route allows apps to verify that an entry exists in the TPS database.
+
+The API response is formatted in the following way:
+```
+{
+	success: boolean,
+	body?: {
+		verified: boolean
+	}
+}
+```
+
+If the entry exists in the TPS database, the `body.verified` boolean will be `true`.
 
 ## GET /entry/get/:hash
 

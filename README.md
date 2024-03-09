@@ -64,14 +64,28 @@ If the user approves or rejects the request, the `<DATA>` field in the redirect 
 ```
 {
 	success: boolean,
-	details?: {
-		key: string,
-		teamNumber?: string,
-		scoutingUsername?: string
+	body?: {
+		details: {
+			key: string,
+			teamNumber?: string,
+			scoutingUsername?: string
+		}
 	}
 }
 ```
 
-If the `success` boolean is false, the `details` field will not be included as the user has rejected the authentication request. Otherwise, if the `success` boolean is true, the `details.key` field will contain the API key, the `details.teamNumber` field will contain the team number, and the `details.scoutingUsername` field will contain the username of the scouter that approved the authentication request. The app can then store the API key in the device's local storage for making future API requests with the TPS API, and the `<DATA>` field can be removed from the URL (either by redirecting or by manipulating `window.location.search`, `window.location.hash`, or `window.history`).
+If the `success` boolean is false, the `body` field will not be included as the user has rejected the authentication request. Otherwise, if the `success` boolean is true, the `body.details.key` field will contain the API key, the `body.details.teamNumber` field will contain the team number, and the `body.details.scoutingUsername` field will contain the username of the scouter that approved the authentication request. The app can then store the API key in the device's local storage for making future API requests with the TPS API, and the `<DATA>` field can be removed from the URL (either by redirecting or by manipulating `window.location.search`, `window.location.hash`, or `window.history`).
 
 The app's logout method should include a function to remove the API key from the device's local storage and then redirect to the TPW authentication request URL with the provided request parameters. Additionally, the app should be able to gracefully handle situations where the API key expires before the provided expiration date as users will be able to enable and disable their API keys in the future.
+
+## POST /entry/add
+
+## GET /entry/verify/:hash
+
+## GET /entry/get/:hash
+
+## POST /entry/list
+
+## GET /entry/event/:event
+
+## GET /entry/latest/:event

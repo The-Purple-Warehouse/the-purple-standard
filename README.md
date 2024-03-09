@@ -151,8 +151,45 @@ If the entry exists in the TPS database, the `body.verified` boolean will be `tr
 
 ## GET /entry/get/:hash
 
+**Scopes Required:**
+- `tps.entry.get`
+
+The `GET /entry/get/:hash` route allows apps to query TPS entries from the database based on their hash.
+
+The API response is formatted in the following way:
+```
+{
+	success: boolean,
+	body?: {
+		entry: {
+			abilities?: any,
+			counters?: any,
+			data?: any,
+			metadata?: any,
+			ratings?: any,
+			server?: {
+				timestamp?: number,
+				accuracy?: number
+			},
+			timers?: any
+		}
+	}
+}
+```
+
+The `server` field is inserted by the TPS API and includes fields such as `server.timestamp` (the timestamp that the server receives the data in Unix milliseconds time format) and `server.accuracy` (the accuracy of the data). Any of these fields, including `server` fields, may be scrambled, redacted, or excluded by previously specified `privacy` rules.
+
 ## POST /entry/list
+
+**Scopes Required:**
+- `tps.entry.get`
 
 ## GET /entry/event/:event
 
+**Scopes Required:**
+- `tps.entry.get`
+
 ## GET /entry/latest/:event
+
+**Scopes Required:**
+None (no API key is needed for this request)

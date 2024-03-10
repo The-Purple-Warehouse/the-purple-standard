@@ -16,6 +16,7 @@
 - [Examples](/examples)
 - [Interfaces](/interfaces)
 - [Properties](/properties)
+- [API Docs](#api-docs)
 - [Discord Server](https://thepurplewarehouse.com/discord)
 - [The Purple Warehouse Scouting App](https://thepurplewarehouse.com)
 

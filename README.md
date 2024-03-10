@@ -177,7 +177,7 @@ The API response is formatted in the following way:
 }
 ```
 
-The `server` field is inserted by the TPS API and includes fields such as `server.timestamp` (the timestamp that the server receives the data in Unix milliseconds time format) and `server.accuracy` (the accuracy of the data). Any of these fields, including `server` fields, may be scrambled, redacted, or excluded by previously specified `privacy` rules.
+The `body.entry.server` field is inserted by the TPS API and includes fields such as `body.entry.server.timestamp` (the timestamp that the server receives the data in Unix milliseconds time format) and `body.entry.server.accuracy` (the accuracy of the data). Any of these fields, including `server` fields, may be scrambled, redacted, or excluded by previously specified `privacy` rules.
 
 ## POST /entry/list
 
@@ -193,3 +193,21 @@ The `server` field is inserted by the TPS API and includes fields such as `serve
 
 **Scopes Required:**
 None (no API key is needed for this request)
+
+The `GET /entry/latest/:latest` route allows apps to get the latest match scouted in a TPS entry for a certain event.
+
+The API response is formatted in the following way:
+```
+{
+	success: boolean,
+	body?: {
+		latest: {
+			level: string,
+			number: number,
+			set: set
+		}
+	}
+}
+```
+
+The `body.latest` field is formatted according to the [metadata.match](/properties/metadata/match.md) property.

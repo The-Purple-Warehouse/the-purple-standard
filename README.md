@@ -119,7 +119,7 @@ By default, the following privacy rules will be present:
 
 Those rules can be overridden if another rule is explicitly provided that either matches the path or matches a parent of that path.
 
-The `threshold` field is our solution to the free-rider problem, promoting fairness when sharing TPS data. The `threshold` value is used to calculate whether another team can see your TPS entry based on their contributions of TPS data at the same event. Each team starts with a contribution score of 0 at an event, and the score is incremented for each new TPS entry they submit for that event as long as the entry's `threshold` value does not exceed 10 (if it does exceed 10, the contribution is only increased by a factor of `10 / threshold`). The probability that a team can see another team's entry is determined by the ratio of that team's contribution score and the `threshold` of the data. For example, if team A submits 100 entries with a threshold of 10, and team B submits only 2 entries with a threshold of 5, then team B will only be able to see around 20 of team A's entries (or in other words, team B will only see around 2/10 of team A's data since team B has a contribution score of 2 and team A set a `threshold` of 10 for their data). A team will always be able to view all of their own data regardless of the `threshold` value, as the `threshold` is only meant to protect against other teams using data without contributing. If the `threshold` is set to 0, then any team will be able to see the data regardless of contributions at that event. By default, the `threshold` value is set to 10.
+The `threshold` field is our solution to the free-rider problem, promoting fairness when sharing TPS data. The `threshold` value is used to calculate whether another team can see your TPS entry based on their contributions of TPS data at the same event. Each team starts with a contribution score of 0 at an event, and the score is incremented for each new TPS entry the team submits for that event as long as the entry's `threshold` value does not exceed 10 (if it does exceed 10, the contribution is only increased by a factor of `10 / threshold`). The probability that a team can see another team's entry is determined by the ratio of that team's contribution score and the `threshold` of the data. For example, if team A submits 100 entries with a threshold of 10, and team B submits only 2 entries with a threshold of 5, then team B will only be able to see around 20 of team A's entries (or in other words, team B will only see around 2/10 of team A's data since team B has a contribution score of 2 and team A set a `threshold` of 10 for their data). A team will always be able to view all of their own data regardless of the `threshold` value, as the `threshold` is only meant to protect against other teams using data without contributing. If the `threshold` is set to 0, then any team will be able to see the data regardless of contributions at that event. By default, the `threshold` value is set to 10.
 
 The API response is formatted in the following way:
 ```
@@ -182,15 +182,38 @@ The API response is formatted in the following way:
 
 The `body.entry.server` field is inserted by the TPS API and includes fields such as `body.entry.server.timestamp` (the timestamp that the server receives the data in Unix milliseconds time format) and `body.entry.server.accuracy` (the accuracy of the data). Any of these fields, including `server` fields, may be scrambled, redacted, or excluded by previously specified `privacy` rules.
 
-## POST /entry/list
+## GET /entry/list/event/:event
 
 **Scopes Required:**
 - `tps.entry.get`
 
-## GET /entry/event/:event
+The `GET /entry/list/event/:event` route allows apps to query TPS entries from the database based on their event.
 
-**Scopes Required:**
-- `tps.entry.get`
+The API response is formatted in the following way:
+```
+{
+	success: boolean,
+	body?: {
+		entries: {
+			entry: {
+				abilities?: any,
+				counters?: any,
+				data?: any,
+				metadata?: any,
+				ratings?: any,
+				timers?: any,
+				server?: {
+					timestamp?: number,
+					accuracy?: number
+				}
+			},
+			hash: string
+		}[]
+	}
+}
+```
+
+The `body.entries[i].entry` field follows the same format as the `body.entry` field of the `GET /entry/get/:hash` endpoint, and the `body.entries[i].hash` field includes the hash of the data which may be used in other API methods. Entries will be included in the list based on their `threshold` values and the contribution score of the team associated with the API key.
 
 ## GET /entry/latest/:event
 
@@ -214,3 +237,10 @@ The API response is formatted in the following way:
 ```
 
 The `body.latest` field is formatted according to the [metadata.match](/properties/metadata/match.md) property.
+
+## POST /entry/list
+
+**Scopes Required:**
+- `tps.entry.get`
+
+The `POST /entry/list` route allows apps to perform more complex queries for TPS data. This API method will become available in the near future.

@@ -97,14 +97,15 @@ The `POST /entry/add` route allows apps to submit entries to the TPS API. The bo
 		metadata?: any,
 		ratings?: any,
 		timers?: any
-	}
+	},
 	privacy?: {
 		path: string,
 		private?: boolean,
 		teams?: string[],
 		type?: "scrambled" | "redacted" | "excluded",
 		detail?: any
-	}[]
+	}[],
+	threshold?: number
 }
 ```
 
@@ -117,6 +118,8 @@ By default, the following privacy rules will be present:
 - `{ path: "metadata.scouter.name", private: true, type: "scrambled", detail: 16, teams: [ metadata.scouter.team ] }`
 
 Those rules can be overridden if another rule is explicitly provided that either matches the path or matches a parent of that path.
+
+The `threshold` field is our solution to the free-rider problem, promoting fairness when sharing TPS data. The `threshold` value is used to calculate whether another team can see your TPS entry based on their contributions of TPS data at the same event. Each team starts with a contribution score of 0 at an event, and the score is incremented for each new TPS entry they submit for that event as long as the entry's `threshold` value does not exceed 10 (if it does exceed 10, the contribution is only increased by a factor of `10 / threshold`). The probability that a team can see another team's entry is determined by the ratio of that team's contribution score and the `threshold` of the data. For example, if team A submits 100 entries with a threshold of 10, and team B submits only 2 entries with a threshold of 5, then team B will only be able to see around 20 of team A's entries (or in other words, team B will only see around 2/10 of team A's data since team B has a contribution score of 2 and team A set a `threshold` of 10 for their data). A team will always be able to view all of their own data regardless of the `threshold` value, as the `threshold` is only meant to protect against other teams using data without contributing. If the `threshold` is set to 0, then any team will be able to see the data regardless of contributions at that event. By default, the `threshold` value is set to 10.
 
 The API response is formatted in the following way:
 ```
@@ -167,11 +170,11 @@ The API response is formatted in the following way:
 			data?: any,
 			metadata?: any,
 			ratings?: any,
+			timers?: any,
 			server?: {
 				timestamp?: number,
 				accuracy?: number
-			},
-			timers?: any
+			}
 		}
 	}
 }

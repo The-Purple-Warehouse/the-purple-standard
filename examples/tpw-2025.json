@@ -1,0 +1,57 @@
+{
+	"metadata": {
+		"event": "2025capt",
+		"match": {
+			"level": "qm",
+			"number": 3,
+			"set": 1
+		},
+		"bot": "9999",
+		"timestamp": 1711729092182,
+		"scouter": {
+			"name": "daniel",
+			"team": "1072",
+			"app": "tpw"
+		}
+	},
+	"abilities": {
+		"auto-leave-starting-zone": true,
+		"coral-ground-intake": false,
+		"algae-ground-intake": false,
+		"algae-reef-intake": true,
+		"endgame-cage-level-2025": 3
+	},
+	"counters": {},
+	"data": {
+		"auto-scoring-2025": [
+			"asn",
+			"asp",
+			"amn",
+			"amp",
+			"cs1",
+			"cm2"
+		],
+		"teleop-scoring-2025": [
+			"asn",
+			"asp",
+			"amn",
+			"amp",
+			"cs1",
+			"cm2",
+			"cs4"
+		],
+		"notes": "primarly an algae bot - fast net scoring and processor scoring\nstruggled scoring on the reef\n"
+	},
+	"ratings": {
+		"defense-skill": 3,
+		"driver-skill": 3,
+		"intake-consistency": 4,
+		"speed": 2,
+		"stability": 3
+	},
+	"timers": {
+		"brick-time": 1500,
+		"defense-time": 6745,
+		"cage-time-2025": 12815
+	}
+}

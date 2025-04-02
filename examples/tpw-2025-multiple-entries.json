@@ -1,0 +1,167 @@
+{
+	"entries": [
+		{
+			"metadata": {
+				"scouter": {
+					"name": "omkar",
+					"team": "1072",
+					"app": "tpw"
+				},
+				"event": "2025capt",
+				"bot": "9999",
+				"match": {
+					"level": "qm",
+					"number": 1,
+					"set": 1
+				},
+				"timestamp": 1704604894
+			},
+			"abilities": {
+				"auto-leave-starting-zone": true,
+				"coral-ground-intake": false,
+				"algae-ground-intake": false,
+				"algae-reef-intake": true,
+				"endgame-cage-level-2025": 3
+			},
+			"counters": {},
+			"data": {
+				"auto-scoring-2024": [
+					"cs4"
+				],
+				"teleop-scoring-2024": [
+					"asn",
+					"asp",
+					"amn",
+					"asp",
+					"cm4"
+				],
+				"notes": "Overall bot was good and had cool RGB :)"
+			},
+			"ratings": {
+				"driver-skill": 4,
+				"defense-skill": 0,
+				"speed": 3,
+				"stability": 2,
+				"intake-consistency": 5
+			},
+			"timers": {
+				"cage-time-2025": 6023,
+				"brick-time": 0,
+				"defense-time": 0
+			}
+		},
+		{
+			"metadata": {
+				"scouter": {
+					"name": "kabir",
+					"team": "1072",
+					"app": "tpw"
+				},
+				"event": "2025capt",
+				"bot": "9998",
+				"match": {
+					"level": "qm",
+					"number": 1,
+					"set": 1
+				},
+				"timestamp": 1704605632
+			},
+			"abilities": {
+				"auto-leave-starting-zone": true,
+				"coral-ground-intake": true,
+				"algae-ground-intake": true,
+				"algae-reef-intake": true,
+				"teleop-cage-level-2025": 3
+			},
+			"counters": {},
+			"data": {
+				"auto-scoring-2024": [
+					"cs4",
+					"cs4",
+					"cs4"
+				],
+				"teleop-scoring-2024": [
+					"asn",
+					"asn",
+					"asp",
+					"cm3",
+					"cm4",
+					"cs4",
+					"cs4",
+					"cs2",
+					"cs2"
+				],
+				"notes": "fast, scored consistently, low cycle times, good alliance partner strategies"
+			},
+			"ratings": {
+				"driver-skill": 5,
+				"defense-skill": 0,
+				"speed": 4,
+				"stability": 3,
+				"intake-consistency": 5
+			},
+			"timers": {
+				"cage-time-2025": 2864,
+				"brick-time": 0,
+				"defense-time": 0
+			}
+		},
+		{
+			"metadata": {
+				"event": "2025capt",
+				"match": {
+					"level": "qm",
+					"number": 3,
+					"set": 1
+				},
+				"bot": "9999",
+				"timestamp": 1711729092182,
+				"scouter": {
+					"name": "daniel",
+					"team": "1072",
+					"app": "tpw"
+				}
+			},
+			"abilities": {
+				"auto-leave-starting-zone": true,
+				"coral-ground-intake": false,
+				"algae-ground-intake": false,
+				"algae-reef-intake": true,
+				"endgame-cage-level-2025": 3
+			},
+			"counters": {},
+			"data": {
+				"auto-scoring-2025": [
+					"asn",
+					"asp",
+					"amn",
+					"amp",
+					"cs1",
+					"cm2"
+				],
+				"teleop-scoring-2025": [
+					"asn",
+					"asp",
+					"amn",
+					"amp",
+					"cs1",
+					"cm2",
+					"cs4"
+				],
+				"notes": "primarly an algae bot - fast net scoring and processor scoring\nstruggled scoring on the reef\n"
+			},
+			"ratings": {
+				"defense-skill": 3,
+				"driver-skill": 3,
+				"intake-consistency": 4,
+				"speed": 2,
+				"stability": 3
+			},
+			"timers": {
+				"brick-time": 1500,
+				"defense-time": 6745,
+				"cage-time-2025": 12815
+			}
+		}		
+	]
+}

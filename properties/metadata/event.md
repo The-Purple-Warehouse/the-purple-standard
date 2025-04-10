@@ -8,6 +8,7 @@ This property stores a string value value of the TBA-formatted event key for the
 
 ## Examples
 - "2024camb"
+- "2025capt"
 
 ## Design Recommendation
 This property can be implemented as a dropdown menu or text input field, where a user can select the event they are currently attending.

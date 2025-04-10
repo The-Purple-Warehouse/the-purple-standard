@@ -1,7 +1,7 @@
 # cage-time-2025
 
 ## Definition
-The cage-time-2025 timer represents the time a robot spends between parking under the barge to clibm and the robot succesfully climbing the cage (leaving the ground).
+The cage-time-2025 timer represents the time a robot spends between parking under the barge to climb and the robot succesfully climbing the cage (leaving the ground).
 
 ## Values
 This property stores an integer value of milliseconds based on the time a robot spends climbing the cage.

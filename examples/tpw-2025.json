@@ -1,6 +1,6 @@
 {
 	"metadata": {
-		"event": "2024camb",
+		"event": "2025capt",
 		"match": {
 			"level": "qm",
 			"number": 3,
@@ -9,33 +9,38 @@
 		"bot": "9999",
 		"timestamp": 1711729092182,
 		"scouter": {
-			"name": "kabir",
+			"name": "daniel",
 			"team": "1072",
 			"app": "thepurplewarehouse.com"
 		}
 	},
 	"abilities": {
-		"auto-center-line-pick-up": false,
-		"ground-pick-up": true,
 		"auto-leave-starting-zone": true,
-		"teleop-spotlight-2024": false,
-		"teleop-stage-level-2024": 3
+		"coral-ground-intake": false,
+		"algae-ground-intake": false,
+		"algae-reef-intake": true,
+		"endgame-cage-level-2025": 3
 	},
 	"counters": {},
 	"data": {
-		"auto-scoring-2024": [
-			"ss",
-			"sm"
+		"auto-scoring-2025": [
+			"asn",
+			"asp",
+			"amn",
+			"amp",
+			"cs1",
+			"cm2"
 		],
-		"teleop-scoring-2024": [
-			"ss",
-			"as",
-			"am",
-			"as",
-			"sa",
-			"ts"
+		"teleop-scoring-2025": [
+			"asn",
+			"asp",
+			"amn",
+			"amp",
+			"cs1",
+			"cm2",
+			"cs4"
 		],
-		"notes": "decent defense and intake always worked smoothly\ncycles were relatively slow though"
+		"notes": "primarly an algae bot - fast net scoring and processor scoring\nstruggled scoring on the reef\n"
 	},
 	"ratings": {
 		"defense-skill": 3,
@@ -47,6 +52,6 @@
 	"timers": {
 		"brick-time": 1500,
 		"defense-time": 6745,
-		"stage-time-2024": 12815
+		"cage-time-2025": 12815
 	}
 }

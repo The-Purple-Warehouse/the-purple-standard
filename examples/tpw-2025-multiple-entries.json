@@ -7,7 +7,7 @@
 					"team": "1072",
 					"app": "thepurplewarehouse.com"
 				},
-				"event": "2024camb",
+				"event": "2025capt",
 				"bot": "9999",
 				"match": {
 					"level": "qm",
@@ -18,26 +18,22 @@
 			},
 			"abilities": {
 				"auto-leave-starting-zone": true,
-				"ground-pick-up": false,
-				"auto-center-line-pick-up": false,
-				"teleop-spotlight-2024": false,
-				"teleop-stage-level-2024": 2
+				"coral-ground-intake": false,
+				"algae-ground-intake": false,
+				"algae-reef-intake": true,
+				"endgame-cage-level-2025": 3
 			},
 			"counters": {},
 			"data": {
 				"auto-scoring-2024": [
-					"as",
-					"sm"
+					"cs4"
 				],
 				"teleop-scoring-2024": [
-					"ss",
-					"as",
-					"am",
-					"as",
-					"sa",
-					"sm",
-					"tm",
-					"ts"
+					"asn",
+					"asp",
+					"amn",
+					"asp",
+					"cm4"
 				],
 				"notes": "Overall bot was good and had cool RGB :)"
 			},
@@ -49,7 +45,7 @@
 				"intake-consistency": 5
 			},
 			"timers": {
-				"stage-time-2024": 6023,
+				"cage-time-2025": 6023,
 				"brick-time": 0,
 				"defense-time": 0
 			}
@@ -61,7 +57,7 @@
 					"team": "1072",
 					"app": "thepurplewarehouse.com"
 				},
-				"event": "2024camb",
+				"event": "2025capt",
 				"bot": "9998",
 				"match": {
 					"level": "qm",
@@ -72,31 +68,28 @@
 			},
 			"abilities": {
 				"auto-leave-starting-zone": true,
-				"ground-pick-up": true,
-				"auto-center-line-pick-up": true,
-				"teleop-spotlight-2024": true,
-				"teleop-stage-level-2024": 3
+				"coral-ground-intake": true,
+				"algae-ground-intake": true,
+				"algae-reef-intake": true,
+				"teleop-cage-level-2025": 3
 			},
 			"counters": {},
 			"data": {
 				"auto-scoring-2024": [
-					"as",
-					"ss",
-					"as"
+					"cs4",
+					"cs4",
+					"cs4"
 				],
 				"teleop-scoring-2024": [
-					"as",
-					"as",
-					"as",
-					"sa",
-					"sm",
-					"ss",
-					"as",
-					"am",
-					"as",
-					"sa",
-					"ts",
-					"ts"
+					"asn",
+					"asn",
+					"asp",
+					"cm3",
+					"cm4",
+					"cs4",
+					"cs4",
+					"cs2",
+					"cs2"
 				],
 				"notes": "fast, scored consistently, low cycle times, good alliance partner strategies"
 			},
@@ -108,14 +101,14 @@
 				"intake-consistency": 5
 			},
 			"timers": {
-				"stage-time-2024": 2864,
+				"cage-time-2025": 2864,
 				"brick-time": 0,
 				"defense-time": 0
 			}
 		},
 		{
 			"metadata": {
-				"event": "2024camb",
+				"event": "2025capt",
 				"match": {
 					"level": "qm",
 					"number": 3,
@@ -124,33 +117,38 @@
 				"bot": "9999",
 				"timestamp": 1711729092182,
 				"scouter": {
-					"name": "kabir",
+					"name": "daniel",
 					"team": "1072",
-					"app": "thepurplewarehouse.com"
+					"app": "tpw"
 				}
 			},
 			"abilities": {
-				"auto-center-line-pick-up": false,
-				"ground-pick-up": true,
 				"auto-leave-starting-zone": true,
-				"teleop-spotlight-2024": false,
-				"teleop-stage-level-2024": 3
+				"coral-ground-intake": false,
+				"algae-ground-intake": false,
+				"algae-reef-intake": true,
+				"endgame-cage-level-2025": 3
 			},
 			"counters": {},
 			"data": {
-				"auto-scoring-2024": [
-					"ss",
-					"sm"
+				"auto-scoring-2025": [
+					"asn",
+					"asp",
+					"amn",
+					"amp",
+					"cs1",
+					"cm2"
 				],
-				"teleop-scoring-2024": [
-					"ss",
-					"as",
-					"am",
-					"as",
-					"sa",
-					"ts"
+				"teleop-scoring-2025": [
+					"asn",
+					"asp",
+					"amn",
+					"amp",
+					"cs1",
+					"cm2",
+					"cs4"
 				],
-				"notes": "decent defense and intake always worked smoothly\ncycles were relatively slow though"
+				"notes": "primarly an algae bot - fast net scoring and processor scoring\nstruggled scoring on the reef\n"
 			},
 			"ratings": {
 				"defense-skill": 3,
@@ -162,8 +160,8 @@
 			"timers": {
 				"brick-time": 1500,
 				"defense-time": 6745,
-				"stage-time-2024": 12815
+				"cage-time-2025": 12815
 			}
-		}
+		}		
 	]
 }

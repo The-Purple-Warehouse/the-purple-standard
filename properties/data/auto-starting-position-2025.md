@@ -1,9 +1,15 @@
 # auto-starting-position-2025
 
 ## Definition
-The auto-starting-position-2025 data represents the (x, y) percentage coordinates of the position in which the center of the robot started within the starting zone. The point (0, 0) is defined to be the top left corner of the image near corner of the blue barge, and the point (100, 100) is defined to be the bottom right corner of the image near blue alliance's processor.
+The (x, y) percentage coordinates of the position in which the **center of the robot** started within the starting zone.
 
-![Auto Starting Area 2025](/assets/auto-starting-area-2025.png)
+For the blue alliance, (0, 0) is defined to be the **top left** corner of the image below (near corner of the blue barge). (100, 100) is defined to be the **bottom right** corner of the image below (near blue alliance's processor).
+
+![Blue Alliance Auto Starting Area 2025](/assets/auto-starting-area-blue-2025.png)
+
+For the red alliance, (0, 0) is defined to be the **top left** corner of the image below (near corner of the red barge). (100, 100) is defined to be the **bottom right** corner of the image below (near red alliance's processor).
+
+![Red Alliance Auto Starting Area 2024](/assets/auto-starting-area-red-2024.png)
 
 ## Values
 This property stores an object with the keys "x" and "y" which map to integers between 0 and 100 inclusive.
@@ -13,4 +19,4 @@ This property stores an object with the keys "x" and "y" which map to integers b
 - {"x": 10, "y": 90}
 
 ## Design Recommendation
-This property can be implemented as a clickable image. A similar red alliance version of the image would be mirrored left to right, so the x value would be inverted (100 - x).
+This property can be implemented as a clickable image and can be visualized as a heat map.
